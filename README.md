@@ -18,6 +18,7 @@ Scripts to use on Linux servers
  - Searches for any IPs in a file via regex and sorts for duplicates, etc
  - to use do `./AbuseIPDB.sh <path-to-ips-file>`
  - Saves to `output.txt` to make it easier for notes
+
   *Tested on AlmaLinux 8.5 (Arctic Sphynx)*
   
   
