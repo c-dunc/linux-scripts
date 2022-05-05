@@ -1,7 +1,7 @@
 
 # Linux scripts
 
-Scripts to use on Linux servers
+Scripts to use on Linux servers ~ Will constantly be adding new ones!
 
 
 
