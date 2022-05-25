@@ -20,8 +20,9 @@ Scripts to use on Linux servers ~ Will constantly be adding new ones!
  - to use do `./AbuseIPDB.sh` and the script will automatically pull IP-Addresses from the httpd logfile.
  - Saves in a format that makes it easy for awk `output.txt`
  - Enter API Key in `API-KEY` variable and run script! 
- One line install : ```bash
- wget https://raw.githubusercontent.com/csduncan06/linux-scripts/main/AbuseIPDB.sh && chmod 755 AbuseIPDB.sh && ./AbuseIPDB.sh``` ;)
+ One line install : 
+ 
+ `wget https://raw.githubusercontent.com/csduncan06/linux-scripts/main/AbuseIPDB.sh && chmod 755 AbuseIPDB.sh && ./AbuseIPDB.sh` ;)
  
   *Note: This has been tested and created for AlmaLinux. To change this you can change the `ip_list` variable to make it run on different linux flavours!*
    
