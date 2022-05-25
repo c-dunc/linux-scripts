@@ -1,3 +1,5 @@
+#!/bin/bash
+
 API_KEY="APIKey"
 
 ip_list=( $( cat /var/log/httpd/access_log | awk '{print $1}' | uniq | sort -n | sort -nr ) ) #Get all Apache IP addresses and organise
