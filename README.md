@@ -17,11 +17,11 @@ Scripts to use on Linux servers ~ Will constantly be adding new ones!
 # AbuseIPDB.sh
  - Quickly scan a number of IPs on [AbuseIPDB.](https://www.abuseipdb.com/)
  - Searches for any IPs in a file via regex and sorts for duplicates, etc
- - to use do `./AbuseIPDB.sh <path-to-ips-file>`
- - Saves to `output.txt` to make it easier for notes
-
-  *Tested on AlmaLinux 8.5 (Arctic Sphynx)*
-  
+ - to use do `./AbuseIPDB.sh` and the script will automatically pull IP-Addresses from the httpd logfile.
+ - Saves in a format that makes it easy for awk `output.txt`
+ - Enter API Key in `API-KEY` variable and run script! 
+  *Note: This has been tested and created for AlmaLinux. To change this you can change the `ip_list` variable to make it run on different linux flavours!*
+   
   
 # Credits
 [ETMRidge](https://github.com/ETMRidge) ~ Script ideas
