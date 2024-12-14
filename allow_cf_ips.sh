@@ -13,8 +13,9 @@ ipv6_ranges=$(echo "$response" | jq -r '.result.ipv6_cidrs[]')
 ports=(80 443)
 
 echo "Removing existing UFW rules for Cloudflare..."
-sudo ufw delete allow proto tcp from any to any port 80 comment 'Cloudflare IP'
-sudo ufw delete allow proto tcp from any to any port 443 comment 'Cloudflare IP'
+for rule in $(sudo ufw status numbered | grep -E "# Cloudflare IP" | awk '{print $1}' | sort -nr); do
+    sudo ufw delete "$rule" >/dev/null 2>&1 || echo "Rule $rule already deleted."
+done
 
 # Add rules for IPv4 ranges
 echo "Adding UFW rules for Cloudflare IPv4 ranges..."
@@ -24,7 +25,6 @@ for ip in $ipv4_ranges; do
     done
 done
 
-# Add rules for IPv6 ranges
 echo "Adding UFW rules for Cloudflare IPv6 ranges..."
 for ip in $ipv6_ranges; do
     for port in "${ports[@]}"; do
