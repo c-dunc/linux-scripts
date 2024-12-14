@@ -26,6 +26,13 @@ Scripts to use on Linux servers ~ Will constantly be adding new ones!
  
   *Note: This has been tested and created for AlmaLinux. To change this you can change the `ip_list` variable to make it run on different linux flavours!*
    
-  
+## allow_cf_ips.sh
+ - Gets a list of both IPv4 and IPv6 IP addresses from cloudflare
+ - Removes existing rules for web port connectivity
+ - Allows each IP on port 80 and 443. 
+ - Ensures that all web requests are proxied through CloudFlare. 
+![cf-log](/img/cf-log.png) 
+![cf-rule](/img/cf-rule.png)
+
 # Credits
 [ETMRidge](https://github.com/ETMRidge) ~ Script ideas
