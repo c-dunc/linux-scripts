@@ -34,5 +34,9 @@ Scripts to use on Linux servers ~ Will constantly be adding new ones!
 ![cf-log](/img/cf-log.png) 
 ![cf-rule](/img/cf-rule.png)
 
+## hugo-assist.sh
+ - CLI tool to help the deployment of posts with hugo!
+![hugo-assist](/img/hugo-assist.png) 
+
 # Credits
 [ETMRidge](https://github.com/ETMRidge) ~ Script ideas
