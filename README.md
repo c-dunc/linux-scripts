@@ -36,7 +36,13 @@ Scripts to use on Linux servers ~ Will constantly be adding new ones!
 
 ## hugo-assist.sh
  - CLI tool to help the deployment of posts with hugo!
+ 
 ![hugo-assist](/img/hugo-assist.png) 
+
+## S3-Backup.sh
+ - Simple & Lightweight script for backing directories up into AWS S3. 
+ ![S3-Backup](/img/S3-Backup.png) 
+
 
 # Credits
 [ETMRidge](https://github.com/ETMRidge) ~ Script ideas
